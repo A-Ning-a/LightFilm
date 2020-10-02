@@ -1,0 +1,104 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/home",
+			"style": {
+				"app-plus": {
+					"titleNView": false //禁用原生导航栏
+				}
+			}
+		},
+		{
+			"path": "pages/movies/movies",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/dynamic/dynamic",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": " ",
+				"navigationBarBackgroundColor": "white"
+			}
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/comment/comment",
+			"style": {
+				"navigationBarTitleText": "你喜欢的电影类型",
+				"navigationBarBackgroundColor": "white"
+			}
+		}
+	    ,{
+            "path" : "pages/detail/detail",
+            "style" : {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "轻影",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#333333",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/home/home",
+			"iconPath": "static/home.png",
+			"selectedIconPath": "static/home_selected.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/movies/movies",
+			"iconPath": "static/movies.png",
+			"selectedIconPath": "static/movies_selected.png",
+			"text": "电影"
+		}, {
+			"pagePath": "pages/dynamic/dynamic",
+			"iconPath": "static/dynamic.png",
+			"selectedIconPath": "static/dynamic_selected.png",
+			"text": "动态"
+		}, {
+			"pagePath": "pages/my/my",
+			"iconPath": "static/my.png",
+			"selectedIconPath": "static/my_selected.png",
+			"text": "我的"
+		}]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}
